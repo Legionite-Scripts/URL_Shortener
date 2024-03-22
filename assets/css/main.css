@@ -10,6 +10,9 @@ img {
   -webkit-user-drag: none;
   user-select: none;
 }
+button{
+  cursor: pointer;
+}
 
 * {
   margin: 0;

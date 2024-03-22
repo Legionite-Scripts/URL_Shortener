@@ -1,7 +1,7 @@
 <template>
   <div class="sidepanel p-1" ref="sidepanel">
     <div class="head text-center center mb-2">
-      <h2>Storage Preferences</h2>
+      <h2 class="mt-2">Storage Preferences</h2>
       <span ref="close" @click="closePanel">&times;</span>
     </div>
     <p class="mb-1">
@@ -125,6 +125,7 @@ switches.forEach((switchElement) => {
   z-index: 1;
   border: 1px solid #333;
   background-color: #f8f8f8;
+  transition: all .3s ease;
 }
 
 /* Switch Button Slider */
@@ -191,9 +192,17 @@ input:checked + .slider:before {
   color: white;
   width: 100%;
 }
+
 span {
   font-size: 3em;
   font-weight: 300;
   cursor: pointer;
+}
+
+@media(max-width:1000px) 
+{
+  .sidepanel{
+    width: 100vw;
+  }
 }
 </style>
