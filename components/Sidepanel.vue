@@ -125,7 +125,7 @@ switches.forEach((switchElement) => {
   z-index: 1;
   border: 1px solid #333;
   background-color: #f8f8f8;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 /* Switch Button Slider */
@@ -179,12 +179,14 @@ input:focus + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+
 /* End */
 .head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .sidepanel button.save {
   height: 4em !important;
   background-color: #260212;
@@ -199,9 +201,8 @@ span {
   cursor: pointer;
 }
 
-@media(max-width:1000px) 
-{
-  .sidepanel{
+@media (max-width: 1000px) {
+  .sidepanel {
     width: 100vw;
   }
 }
