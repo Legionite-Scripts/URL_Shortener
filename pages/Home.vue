@@ -4,7 +4,7 @@
       <h1 class="mb-4">URL Shortener</h1>
       <input
         type="text"
-        placeholder="Enter URL to be shortened (e.g https://example.com)"
+        placeholder="Enter URL to be shortened (e.g https://cool.com)"
         class="mb-3"
         ref="initialUrlInput"
       />
@@ -91,5 +91,8 @@ button:hover {
   form {
     width: 100vw;
   }
+  input::placeholder{
+  font-size: 1em;
+}
 }
 </style>
